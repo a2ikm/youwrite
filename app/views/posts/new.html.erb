@@ -1,1 +1,13 @@
+<% if @post.errors %>
+  <div class="alert-message block-message error">
+        <a class="close" href="#">×</a>
+        <p><strong>Oh snap! You got an error!</strong> Change this and that and try again.</p>
+        <ul>
+          <% @post.errors.each do |att, msg| %>
+            <li><%= att.to_s.camelize %>: <%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+<% end %>
+
 <%= render :partial => "form" %>

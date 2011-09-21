@@ -1,5 +1,12 @@
 <h1>投稿一覧</h1>
 
+<% if notice %>
+  <div class="alert-message success">
+    <a class="close" href="#">&times;</a>
+    <p><%= notice %></p>
+  </div>
+<% end %>
+
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render :partial => "single", :locals => { :post => post } %>
@@ -7,7 +14,5 @@
 </div>
 
 <%= paginate @posts %>
-
-<hr />
 
 <%= render :partial => "form" %>

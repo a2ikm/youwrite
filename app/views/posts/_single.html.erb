@@ -1,7 +1,9 @@
 <div class="post" id="post-<% post.id %>">
   <div class="post-head">
     <h2 class="post-name"><%= post.name %></h2>
-    <div class="post-meta"><%= post.created_at %></div>
+    <div class="post-meta">
+      <%= post.created_at %>
+      <% if post.new? %><span class="label success">New</span><% end %></div>
   </div>
   <div class="post-body">
     <%= post.body %>

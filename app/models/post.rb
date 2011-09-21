@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
+  paginates_per 5
+  
   scope :newer, order("created_at DESC")
 
   validates_presence_of :name

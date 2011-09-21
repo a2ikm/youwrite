@@ -6,3 +6,38 @@ textarea {
   width:  40em;
   height: 15em;
 }
+
+#posts {
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post-head {
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-box-sizing: border-box;
+}
+
+.post-name {
+  display: table-cell;
+  vertical-align: bottom;
+  -webkit-box-sizing: border-box;
+}
+
+.post-meta {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  bottom: 4px;
+  -webkit-box-sizing: border-box;
+  padding-left: 1em;
+}
+
+.post-body {
+  margin: 5px 20px;
+}

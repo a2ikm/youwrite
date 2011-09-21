@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.page(params[:page]).newer
+    @posts = Post.newer
     @post = Post.new
   end
 

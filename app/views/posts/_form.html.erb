@@ -1,13 +1,21 @@
 <% form_for :post do |f| %>
-  <table>
-    <tr>
-      <th>Name</th>
-      <td><%= f.text_field :name, :class => "xlarge" %></td>
-    </tr>
-    <tr>
-      <th>Body</th>
-      <td><%= f.text_area :body %></td>
-    </tr>
-  </table>
-  <p><%= f.submit %></p>
+  <fieldset>
+    <legend>新規投稿</legend>
+    <div class="clearfix">
+      <label>Name</label>
+      <div class="input">
+        <%= f.text_field :name, :class => "xlarge" %>
+      </div>
+    </div>
+    <div class="clearfix">
+      <label>Body</label>
+      <div class="input">
+        <%= f.text_area :body, :size => "40x15" %>
+      </div>
+    </div>
+    <div class="actions">
+      <button type="submit" class="btn primary">Save changes</button>
+      <button type="reset" class="btn">Cancel</button>
+    </div>
+  </fieldset>
 <% end %>

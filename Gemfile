@@ -9,6 +9,7 @@ gem "pg", :group => :production
 gem "sqlite3", :group => :development
 
 gem 'kaminari'
+gem 'redcarpet'
 
 # Use unicorn as the web server
 # gem 'unicorn'

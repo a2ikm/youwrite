@@ -6,6 +6,6 @@
       <% if post.new? %><span class="label success">New</span><% end %></div>
   </div>
   <div class="post-body">
-    <%= post.body %>
+    <%= post.converted_body.html_safe %>
   </div>
 </div>

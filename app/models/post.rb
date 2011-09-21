@@ -5,6 +5,7 @@ class Post < ActiveRecord::Base
 
   validates_presence_of :name
   validates_presence_of :body
+  validates_length_of :name, :maximum => 20
 
   def new?
     Time.now - created_at < 6*60*60

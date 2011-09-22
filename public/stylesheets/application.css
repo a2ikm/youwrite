@@ -1,10 +1,14 @@
-#container {
-  padding: 2em;;
-}
-
 textarea {
   width:  40em;
   height: 15em;
+}
+
+code {
+  background-color: transparent;
+}
+
+#container {
+  padding: 2em;;
 }
 
 #posts {
